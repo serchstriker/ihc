@@ -1,0 +1,6 @@
+{
+  "name": "Technical Craft: Ergonomic & Touch Spec Studio",
+  "description": "Interactive design system and ergonomic testing studio for mobile touch targets, WCAG 2.2 accessibility, and tactile UI engineering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
