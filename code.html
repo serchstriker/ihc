@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>TECHSTORE – Tienda Virtual de Tecnología</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.skip-to-content:focus{position:static;width:auto;height:auto;overflow:visible;clip:auto;z-index:9999;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "background": "#faf8ff",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary-fixed-variant": "#6e3900",
+        "on-error-container": "#93000a",
+        "tertiary-container": "#653400",
+        "on-surface-variant": "#444651",
+        "inverse-surface": "#283044",
+        "on-secondary-fixed-variant": "#004b73",
+        "error-container": "#ffdad6",
+        "secondary-fixed-dim": "#93ccff",
+        "primary-container": "#1e3a8a",
+        "on-surface": "#131b2e",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#90a8ff",
+        "tertiary-fixed-dim": "#ffb77d",
+        "on-error": "#ffffff",
+        "on-background": "#131b2e",
+        "error": "#ba1a1a",
+        "on-primary-fixed-variant": "#264191",
+        "on-tertiary": "#ffffff",
+        "surface-container-high": "#e2e7ff",
+        "surface-container-highest": "#dae2fd",
+        "secondary-fixed": "#cce5ff",
+        "on-tertiary-fixed": "#2f1500",
+        "primary-fixed": "#dce1ff",
+        "on-primary-fixed": "#00164e",
+        "inverse-primary": "#b6c4ff",
+        "tertiary": "#442100",
+        "surface-bright": "#faf8ff",
+        "tertiary-fixed": "#ffdcc3",
+        "on-secondary": "#ffffff",
+        "surface-variant": "#dae2fd",
+        "on-tertiary-container": "#fc922b",
+        "primary": "#00236f",
+        "primary-fixed-dim": "#b6c4ff",
+        "on-secondary-fixed": "#001d31",
+        "on-secondary-container": "#00476e",
+        "outline-variant": "#c5c5d3",
+        "surface-container-low": "#f2f3ff",
+        "surface-dim": "#d2d9f4",
+        "surface-container": "#eaedff",
+        "surface-tint": "#4059aa",
+        "inverse-on-surface": "#eef0ff",
+        "outline": "#757682",
+        "secondary-container": "#5bb8fe",
+        "secondary": "#006398",
+        "surface": "#faf8ff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-xl": "2rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "margin": "2rem",
+        "margin-mobile": "1rem",
+        "space-lg": "1.5rem",
+        "gutter": "1.5rem",
+        "space-xs": "0.25rem",
+        "gutter-mobile": "1rem"
+      },
+      "fontFamily": {
+        "body-sm": ["Inter"],
+        "label-sm": ["Inter"],
+        "headline-sm": ["Inter"],
+        "headline-lg": ["Inter"],
+        "body-lg": ["Inter"],
+        "headline-lg-mobile": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "title-md": ["Inter"],
+        "label-md": ["Inter"],
+        "headline-xl": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-md": ["Inter"]
+      },
+      "fontSize": {
+        "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-xl-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+        "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><a class="skip-to-content sr-only focus:not-sr-only focus:inline-block focus:px-space-md focus:py-space-sm focus:bg-primary focus:text-on-primary font-label-md text-label-md focus:outline-none" href="#main-content">Saltar al contenido principal</a><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-high text-on-surface"><div class="max-w-7xl mx-auto px-margin flex items-center justify-between h-9 font-label-sm text-label-sm"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">support_agent</span><span>Soporte 24/7: 0800-TECH-HELP</span></span><span class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span><span>Envíos asegurados a todo el país</span></span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-0.5 rounded"><span class="text-on-surface-variant font-label-sm text-label-sm pr-1">Accesibilidad:</span><button aria-label="Reducir tamaño de fuente" class="px-1.5 py-0.5 hover:bg-surface-container-highest hover:text-on-surface text-on-surface font-label-sm text-label-sm rounded focus:ring-2 focus:ring-primary focus:outline-none" type="button">A-</button><button aria-label="Aumentar tamaño de fuente" class="px-1.5 py-0.5 hover:bg-surface-container-highest hover:text-on-surface text-on-surface font-label-sm text-label-sm rounded focus:ring-2 focus:ring-primary focus:outline-none" type="button">A+</button><span class="text-outline-variant">|</span><button aria-label="Alternar modo de alto contraste" class="flex items-center gap-0.5 px-1.5 py-0.5 hover:bg-surface-container-highest hover:text-on-surface text-on-surface font-label-sm text-label-sm rounded focus:ring-2 focus:ring-primary focus:outline-none" type="button"><span class="material-symbols-outlined text-[14px]">contrast</span><span>Contraste</span></button></div><div class="hidden sm:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">verified</span><span class="text-on-surface-variant">WCAG 2.2 AA</span></div></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-sm shrink-0 focus:ring-2 focus:ring-primary focus:outline-none rounded-lg p-space-xs" data-path="catalogo-de-productos" href="#"><img alt="TECHSTORE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAsB_9CgvaWJ9WMBgCg3HFBlLGKAts0vH7V0MsicU1AcQ1B_mZBDwZ6WIap8UpVcBit4W7krI4wC8LKlQDD5rp3S2qM2-uMHjaANTGcf0UYGC3FOqXDQ5yb34vFLaP8110bf1ykF-l9QnLAbjvjs2mpE-aeVips0S1OXxOuzoV2fcnrfMkp77l8bZMWwREwVuXLDOW9JoPLM73YrQqsgNnqDfkJNFgj4ywnQHn9GgaP"/><span class="font-headline-md text-headline-md tracking-tight text-primary">TECHSTORE</span></a><div class="flex-1 max-w-2xl mx-space-md hidden lg:block"><form class="relative flex items-center bg-surface-container-lowest rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.06)] focus-within:ring-2 focus-within:ring-primary" role="search"><label class="sr-only" for="global-search-input">Buscar productos tecnológicos, marcas y especificaciones</label><div class="relative flex items-center shrink-0 pl-space-md pr-space-xs"><select aria-label="Filtrar por categoría" class="bg-transparent font-label-md text-label-md text-on-surface-variant focus:outline-none cursor-pointer pr-space-xs" id="search-category"><option value="all">Todas</option><option value="laptops">Laptops</option><option value="smartphones">Smartphones</option><option value="hardware">Hardware</option><option value="audio">Audio</option></select><span class="text-outline-variant pl-space-xs">|</span></div><input autocomplete="off" class="w-full py-2.5 px-space-sm font-body-sm text-body-sm bg-transparent text-on-surface placeholder:text-on-surface-variant focus:outline-none" id="global-search-input" placeholder="Buscar por procesador, modelo, marca (ej. RTX 4080, MacBook)..." type="search"/><button aria-label="Limpiar búsqueda" class="p-space-xs text-on-surface-variant hover:text-on-surface focus:outline-none" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button><button aria-label="Ejecutar búsqueda" class="px-space-md py-2.5 bg-primary text-on-primary rounded-r-xl hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[20px]">search</span></button></form></div><div class="flex items-center gap-space-md shrink-0"><a class="relative flex flex-col items-center p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors focus:ring-2 focus:ring-primary focus:outline-none" data-path="comparador" href="#" title="Comparador de especificaciones"><span class="material-symbols-outlined text-[24px]">compare_arrows</span><span class="font-label-sm text-label-sm hidden sm:inline">Comparar</span><span aria-label="3 productos en comparador" class="absolute top-0 right-1 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary font-label-sm text-[10px] rounded-full flex items-center justify-center font-bold">3</span></a><a class="relative flex flex-col items-center p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors focus:ring-2 focus:ring-primary focus:outline-none" data-path="favoritos" href="#" title="Lista de deseos guardada"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm hidden sm:inline">Favoritos</span><span aria-label="4 productos en favoritos" class="absolute top-0 right-1 min-w-[18px] h-[18px] px-1 bg-error text-on-error font-label-sm text-[10px] rounded-full flex items-center justify-center font-bold">4</span></a><a class="relative flex items-center gap-space-sm px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container rounded-lg transition-colors focus:ring-2 focus:ring-primary focus:outline-none" data-path="carrito-de-compras" href="#"><div class="relative"><span class="material-symbols-outlined text-[26px] text-primary">shopping_cart</span><span aria-label="2 artículos en el carrito" class="absolute -top-1.5 -right-2 min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center font-bold">2</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Carrito</span><span class="font-title-md text-title-md text-primary leading-tight font-bold">$1,450.00</span></div></a><div class="flex items-center gap-space-xs pl-space-xs"><button aria-expanded="false" aria-haspopup="true" aria-label="Menú de usuario Carlos M." class="flex items-center gap-space-xs p-1 rounded-full hover:bg-surface-container focus:ring-2 focus:ring-primary focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEfNKhhfG-_9UTDtDw0xn6V4Z8I2EA6bxfpeqTPHDL5oWcKCmwXW6JYv6znI2Uui0fDk012134gay8JqZURu4qYz67uaXhNs805bd1G2B7IvcUtLqY9flSP-HknNxv69vpDuGXrEm4p5O9mScMpw_i-BF-HiWPu3v_QpsHhqp9PgY3EUrGmjUc6lU6Oj0JAvf1X4GZN7EX29jdBFif-54CWNXPU7LQUoafLw3ic3Q"/><span class="hidden md:inline font-label-md text-label-md text-on-surface font-semibold">Carlos M.</span><span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span></button></div></div></div><div class="bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin"><nav aria-label="Navegación por categorías de productos" class="flex items-center justify-between overflow-x-auto py-1.5 scrollbar-none" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><div class="flex items-center gap-space-xs whitespace-nowrap"><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="catalogo-de-productos" href="#">Laptops y Computadoras</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="smartphones-y-tablets" href="#">Smartphones y Tablets</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="componentes-y-hardware" href="#">Componentes y Hardware</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="perifericos-y-accesorios" href="#">Periféricos y Accesorios</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="audio-y-video" href="#">Audio y Video</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="dispositivos-inteligentes" href="#">Dispositivos Inteligentes</a></div><div class="pl-space-md shrink-0"><a class="inline-flex items-center gap-space-xs px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-tertiary-fixed transition-colors rounded-lg" data-path="ofertas-especiales" href="#"><span class="px-1.5 py-0.5 rounded font-label-sm text-[11px] bg-tertiary-fixed text-on-tertiary-fixed uppercase font-bold tracking-wide">Flash</span>Ofertas Especiales</a></div></nav></div></div></header><div aria-atomic="true" aria-live="polite" class="fixed top-36 right-6 z-[60] flex flex-col gap-space-sm max-w-sm pointer-events-none"><div class="pointer-events-auto flex items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-[0_4px_6px_-1px_rgba(15,23,42,0.08),0_2px_4px_-2px_rgba(15,23,42,0.04)] ring-1 ring-outline-variant"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span><div><p class="font-label-md text-label-md text-on-surface font-semibold">Producto añadido</p><p class="font-body-sm text-body-sm text-on-surface-variant">Se añadió con éxito a tu carrito.</p></div></div><button aria-label="Cerrar notificación" class="text-on-surface-variant hover:text-on-surface p-1 rounded" type="button"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div><div class="pt-40 max-w-7xl mx-auto px-margin"><nav aria-label="Ruta de exploración migas de pan" class="py-space-sm"><ol class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors flex items-center gap-1" data-path="catalogo-de-productos" href="#"><span class="material-symbols-outlined text-[16px]">home</span><span>Inicio</span></a></li><li><span class="text-outline-variant">/</span></li><li><span aria-current="page" class="text-on-surface font-medium">Tecnología y Hardware</span></li></ol></nav></div><main class="w-full bg-surface max-w-7xl mx-auto px-margin focus:outline-none" id="main-content"><div class="flex flex-col w-full pb-space-xl">
+<!-- Section Header & Active Controls Area -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Hardware Certificado</span>
+<span class="inline-block w-1 h-1 rounded-full bg-secondary"></span>
+<span class="text-secondary font-semibold">Garantía Oficial 24 Meses</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Catálogo de Laptops y Computadoras</h1>
+<p aria-live="polite" class="font-body-sm text-body-sm text-on-surface-variant">
+          Mostrando <strong class="text-on-surface font-semibold">24</strong> de <strong class="text-on-surface font-semibold">118</strong> productos especializados disponibles
+        </p>
+</div>
+<!-- Sorting, Layout & Density Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<label class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap mr-space-xs flex items-center gap-1" for="sort-select">
+<span class="material-symbols-outlined text-[16px] text-primary">sort</span>
+<span>Ordenar por:</span>
+</label>
+<select class="bg-transparent font-label-md text-label-md text-on-surface font-semibold focus:outline-none cursor-pointer" id="sort-select">
+<option selected="" value="popularity">Mayor popularidad</option>
+<option value="price_asc">Precio: menor a mayor</option>
+<option value="price_desc">Precio: mayor a menor</option>
+<option value="rating">Mejor valorados</option>
+<option value="specs">Mayor capacidad de cómputo</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<label class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap mr-space-xs" for="items-per-page">Mostrar:</label>
+<select class="bg-transparent font-label-md text-label-md text-on-surface font-medium focus:outline-none cursor-pointer" id="items-per-page">
+<option selected="" value="24">24</option>
+<option value="48">48</option>
+<option value="96">96</option>
+</select>
+</div>
+<div aria-label="Modo de visualización de productos" class="flex items-center bg-surface-container-low p-1 rounded-lg" role="group">
+<button aria-label="Vista en cuadrícula" aria-pressed="true" class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center transition-colors" id="grid-view-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+</button>
+<button aria-label="Vista detallada en lista" aria-pressed="false" class="p-1.5 rounded text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="list-view-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Filters Bar -->
+<div aria-label="Filtros activos actualmente" class="pt-space-sm flex flex-wrap items-center gap-space-xs bg-surface-container-low/50 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1 pl-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">filter_alt</span>
+        Filtros aplicados:
+      </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container-lowest rounded-full font-label-sm text-label-sm text-primary shadow-sm">
+<span>Portátiles</span>
+<button aria-label="Remover filtro Portátiles" class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container-lowest rounded-full font-label-sm text-label-sm text-primary shadow-sm">
+<span>Intel Core i7/i9</span>
+<button aria-label="Remover filtro Intel Core i7 e i9" class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Envío Express Hoy</span>
+<button aria-label="Remover filtro Envío Express Hoy" class="hover:text-error transition-colors flex items-center" type="button">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+</button>
+</span>
+<button class="ml-auto font-label-sm text-label-sm text-secondary hover:underline font-semibold px-space-xs" type="button">
+        Restablecer criterios (3)
+      </button>
+</div>
+</section>
+<!-- Main Layout Grid: Sidebar Filters + Products Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Faceted Filter Sidebar (Col 1-3) -->
+<aside aria-label="Filtros facetados de catálogo" class="lg:col-span-3 w-full space-y-space-md lg:sticky lg:top-40 bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<span>Filtros</span>
+</h2>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-error transition-colors" type="button">
+          Limpiar todos
+        </button>
+</div>
+<!-- Quick Search within Filters -->
+<div class="relative">
+<label class="sr-only" for="filter-keyword-search">Buscar modelo, arquitectura o código en filtros</label>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low pl-8 pr-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest" id="filter-keyword-search" placeholder="Filtrar por RTX, Ryzen, OLED..." type="text"/>
+</div>
+<!-- Filter Section: Categories -->
+<fieldset class="pt-space-xs space-y-space-xs">
+<legend class="w-full font-label-md text-label-md text-on-surface font-semibold pb-space-xs flex items-center justify-between cursor-pointer">
+<span>Categoría Principal</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">keyboard_arrow_up</span>
+</legend>
+<div class="space-y-1">
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="cat" type="checkbox" value="laptops"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Notebooks &amp; Ultrabooks</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">84</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="cat" type="checkbox" value="workstations"/>
+<span class="font-body-sm text-body-sm text-on-surface">Workstations Portátiles</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="cat" type="checkbox" value="convertibles"/>
+<span class="font-body-sm text-body-sm text-on-surface">2 en 1 Táctiles</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12</span>
+</label>
+</div>
+</fieldset>
+<!-- Filter Section: Dual Price Slider -->
+<fieldset class="pt-space-xs space-y-space-sm">
+<legend class="w-full font-label-md text-label-md text-on-surface font-semibold pb-space-xs flex items-center justify-between">
+<span>Rango de Precio ($ USD)</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">attach_money</span>
+</legend>
+<div class="grid grid-cols-2 gap-space-xs">
+<div>
+<label class="font-label-sm text-[11px] text-on-surface-variant block uppercase" for="price-min">Mínimo</label>
+<div class="relative">
+<span class="absolute left-2.5 top-2 font-label-md text-label-md text-on-surface-variant">$</span>
+<input class="w-full bg-surface-container-low pl-6 pr-2 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="price-min" max="6500" min="400" type="number" value="850"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-[11px] text-on-surface-variant block uppercase" for="price-max">Máximo</label>
+<div class="relative">
+<span class="absolute left-2.5 top-2 font-label-md text-label-md text-on-surface-variant">$</span>
+<input class="w-full bg-surface-container-low pl-6 pr-2 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="price-max" max="6500" min="400" type="number" value="4200"/>
+</div>
+</div>
+</div>
+<div class="pt-1">
+<input aria-label="Ajustar precio máximo" class="w-full accent-primary h-1.5 bg-surface-container-high rounded-lg cursor-pointer" max="6500" min="400" type="range" value="4200"/>
+</div>
+</fieldset>
+<!-- Filter Section: Brands -->
+<fieldset class="pt-space-xs space-y-space-xs">
+<legend class="w-full font-label-md text-label-md text-on-surface font-semibold pb-space-xs flex items-center justify-between cursor-pointer">
+<span>Fabricante Autorizado</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">keyboard_arrow_up</span>
+</legend>
+<div class="space-y-1">
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="brand" type="checkbox" value="apple"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Apple</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">28</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="brand" type="checkbox" value="asus"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">ASUS ROG / ProArt</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">34</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="brand" type="checkbox" value="lenovo"/>
+<span class="font-body-sm text-body-sm text-on-surface">Lenovo Legion / ThinkPad</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">21</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="brand" type="checkbox" value="dell"/>
+<span class="font-body-sm text-body-sm text-on-surface">Dell XPS / Precision</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-2 focus:ring-secondary accent-primary" name="brand" type="checkbox" value="msi"/>
+<span class="font-body-sm text-body-sm text-on-surface">MSI Stealth / Raider</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16</span>
+</label>
+</div>
+</fieldset>
+<!-- Filter Section: RAM Specs -->
+<fieldset class="pt-space-xs space-y-space-xs">
+<legend class="w-full font-label-md text-label-md text-on-surface font-semibold pb-space-xs flex items-center justify-between">
+<span>Memoria RAM Unificada/DDR5</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">memory</span>
+</legend>
+<div class="grid grid-cols-3 gap-1.5">
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high cursor-pointer text-center">
+<input class="sr-only" name="ram" type="checkbox" value="16gb"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">16 GB</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">42 mod</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-primary-container text-on-primary-container shadow-sm cursor-pointer text-center">
+<input checked="" class="sr-only" name="ram" type="checkbox" value="32gb"/>
+<span class="font-label-md text-label-md font-bold">32 GB</span>
+<span class="font-label-sm text-[10px] text-on-primary-container/80">54 mod</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high cursor-pointer text-center">
+<input class="sr-only" name="ram" type="checkbox" value="64gb"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">64+ GB</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">22 mod</span>
+</label>
+</div>
+</fieldset>
+<!-- Filter Section: Storage SSD -->
+<fieldset class="pt-space-xs space-y-space-xs">
+<legend class="w-full font-label-md text-label-md text-on-surface font-semibold pb-space-xs flex items-center justify-between">
+<span>Almacenamiento NVMe PCIe 4.0/5.0</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">storage</span>
+</legend>
+<div class="space-y-1">
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-primary accent-primary" name="ssd" type="checkbox" value="512gb"/>
+<span class="font-body-sm text-body-sm text-on-surface">512 GB NVMe</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" name="ssd" type="checkbox" value="1tb"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">1 TB Gen4 High-Speed</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">68</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" name="ssd" type="checkbox" value="2tb"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">2 TB PCIe 4.0 Performance</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">36</span>
+</label>
+</div>
+</fieldset>
+<!-- Express Availability Toggle -->
+<div class="pt-space-xs">
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-secondary-fixed/50 cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Entrega Express Hoy</span>
+</span>
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+</label>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-sm space-y-space-xs">
+<button class="w-full py-2.5 bg-primary text-on-primary font-label-md text-label-md font-semibold rounded-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">done</span>
+<span>Aplicar Filtros (24)</span>
+</button>
+<button class="w-full py-2 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container-high transition-colors" type="reset">
+          Restablecer Opciones
+        </button>
+</div>
+</aside>
+<!-- Product Grid Area (Col 4-12) -->
+<section aria-label="Listado de resultados de notebooks" class="lg:col-span-9 w-full space-y-space-lg">
+<!-- Comparison Floating Quick Bar (Compact helper) -->
+<div class="bg-surface-container-high rounded-xl p-space-sm px-space-md flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">compare_arrows</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Comparador activo:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 de 3 modelos seleccionados</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded font-medium">MacBook Pro 16</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded font-medium">ROG Zephyrus G16</span>
+<a class="ml-space-xs px-3 py-1 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm font-semibold hover:bg-on-secondary-fixed-variant transition-colors" data-path="comparador" href="#">
+            Ver Comparativa
+          </a>
+</div>
+</div>
+<!-- 6 Technical Product Cards in Bento/Responsive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg" id="product-catalog-grid">
+<!-- Card 1: Apple MacBook Pro -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Apple MacBook Pro 16 space black finish sitting on modern minimal studio desk with sleek ambient blue lighting reflection showcasing thin bezel liquid retina display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOOKSziC872KJiPzl9gSeYOSWGdnkPKy6sMbwvFmBTpdmQW2vtagnHksVd468wC8KeTnIsEdZfJ1BrT7dE_NhVjky0cLM3OX63dBCQ6uhswAqDYJ0-hi0yCsNos2mQ6eYbgsC1h8DDEdITu3ZRMg7qvvkdoBZPWaLzW1K8GacD8I6K8MKUeoAos8ECtmksP7dtfuJGqrzBcOgqroiXG585kEczJzYP7mEsdom8siU"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold uppercase rounded">Ahorra $300</span>
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">flash_on</span> Express Hoy
+                </span>
+</div>
+<button aria-label="Añadir a lista de deseos: MacBook Pro 16 M3 Max" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">Apple silicon</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9</span>
+<span class="text-on-surface-variant text-[11px]">(48)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                Apple MacBook Pro 16" (2024) Liquid Retina XDR
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Chip Apple M3 Max (CPU 16 núcleos, GPU 40 núcleos)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">developer_board</span>
+<span>36 GB Memoria Unificada de alta velocidad</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">storage</span>
+<span>1 TB Almacenamiento SSD Ultrarrápido (7.4 GB/s)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>Pantalla 16.2" Mini-LED 120Hz ProMotion 1600 nits</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$3,799.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$3,499.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-fixed px-2 py-0.5 rounded">En Stock (8 uds)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Card 2: ASUS ROG Zephyrus G16 -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="ASUS ROG Zephyrus G16 gaming laptop in platinum white with slash lighting illuminated on the aluminum lid standing open on sleek clean technical surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaYHx-xftUQ_8ZsLLFdzMjItGjWBt_8mV4-ChgFS94m-eOakBzJ1oacE4wOP1luvXZ_2mZ4zo1w1MG71Rq63zuqqYAdIB92NsnEDIJHKuAPc4e2BzPe1g3GV2sBu9C1jXpAF-h7_qrCIiLy0ePNdpmc9StgvgKLgQl6860a0GJKsK3vfeZj8PgldlpL_UJMQbblW8mbbpEJZ7TfYYWgXOsczql8zl9T7K1GSlAPPQ"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-[11px] font-bold uppercase rounded">Top Ventas</span>
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">local_shipping</span> Envío Gratis
+                </span>
+</div>
+<button aria-label="Añadir a lista de deseos: ASUS ROG Zephyrus G16" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">ASUS ROG</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.8</span>
+<span class="text-on-surface-variant text-[11px]">(32)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                ASUS ROG Zephyrus G16 OLED (2024) RTX 4080
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Intel Core Ultra 9 185H (16 Cores, NPU AI Boost)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">sports_esports</span>
+<span>NVIDIA GeForce RTX 4080 12GB GDDR6 (115W)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">storage</span>
+<span>2 TB SSD M.2 NVMe PCIe 4.0 Performance</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>16" 2.5K OLED 240Hz 0.2ms ROG Nebula HDR</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$2,899.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$2,649.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-fixed px-2 py-0.5 rounded">En Stock (5 uds)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Card 3: Lenovo Legion Pro 7i -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Lenovo Legion Pro 7i powerhouse laptop chassis in Onyx Grey displaying high-tech dual cooling exhaust vents and RGB per-key illuminated mechanical keyboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAobqPyx27i2Nm5TNRKes8Ff2qk_ayexphI-WNHVpEQpzPzn4YhQ0sNrJ0w_Y1ymKZKBb5su3awwbm0IJAg0kRTr7cJaYjWxQ5bTqN2_klvxHQ-U0xuM2rKFq-syFcyM0bT88HV5tmdsPr-rDiJP1OptV7yb3B_QdGtHfptbvqBbmGEuA5PFv2qUzuXDnPzionCTUYo0UKn0A76cVnel4KFDH3VftUPg-X-HMbVts4"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-error text-on-error font-label-sm text-[11px] font-bold uppercase rounded">Últimas 2 Unidades</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-[11px] font-semibold rounded">Gen 9</span>
+</div>
+<button aria-label="Añadir a lista de deseos: Lenovo Legion Pro 7i" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">Lenovo Legion</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.7</span>
+<span class="text-on-surface-variant text-[11px]">(19)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                Lenovo Legion Pro 7i Gen 9 (Intel i9 14900HX)
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Intel Core i9 14900HX (24 Núcleos, hasta 5.8 GHz)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">sports_esports</span>
+<span>NVIDIA RTX 4090 16GB GDDR6 (175W TGP Max)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">developer_board</span>
+<span>32 GB DDR5 5600MHz Dual Channel</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>16" WQXGA 240Hz 500 nits 100% DCI-P3</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$3,299.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$2,999.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-error font-semibold bg-error-container px-2 py-0.5 rounded">¡Casi agotado!</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Card 4: Dell XPS 16 -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dell XPS 16 workstation laptop with seamless glass touchpad and graphite machined aluminum chassis on high end executive architectural office backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Re1xQrGFh4H6RB3lLM-uuxaNIA0IVQGaVfX8GKd-btBflpIEEIPmrVBuUEXeBNd1kkp8YttbTEWjVk9bWOKUeH6VY00EZQ0vKJTwIEBwE2jC9JIVwwJSI4B8TlmXyD4UnqMcRjOQ1dc3fpd2D_HiMdrVV7fol-LVhOYU-_NCAz5xXBAVYg1pg0QeVHU22QIQqWrlPw6qYcPJfEpHwMAuY8boebIDkDViR8ye410"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> Arquitectura ISV
+                </span>
+</div>
+<button aria-label="Añadir a lista de deseos: Dell XPS 16 9640" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">Dell Precision/XPS</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.6</span>
+<span class="text-on-surface-variant text-[11px]">(27)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                Dell XPS 16 (9640) 4K+ OLED InfinityEdge
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Intel Core Ultra 7 155H con IA Intel AI Boost</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">developer_board</span>
+<span>32 GB LPDDR5x 7467 MT/s Dual Channel</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">storage</span>
+<span>1 TB M.2 PCIe Gen4 NVMe Solid State</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>16.3" 4K+ (3840x2400) OLED Touch Gorilla Glass</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$2,499.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$2,299.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-fixed px-2 py-0.5 rounded">En Stock (11 uds)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Card 5: MSI Stealth 16 AI Studio -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="MSI Stealth 16 Studio lightweight magnesium aluminum blue alloy laptop displayed open showing vibrant high color accuracy display screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBvBluSV5NklXcJ5bUFMNoVBf78GGxlzGbix4CZ3xbOeA8FpeQYtpYmxQ6NaFMv8LZLwh_CP0ABitjlnofnXUL2q_Un9p1wQSmCqdw_7JV9Yo4vCLvcOlX3dJOCPRMzwUo3dbyY6qNtrEblyezvRClI9O1onRw6SrYXkmmgd4tTlJVDaUC_iFbqTz-YwFt0wHN_vyxWco0s2v9jLKNWtCyLFn2sQUoYO5QdyLRZu0"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">palette</span> NVIDIA Studio
+                </span>
+</div>
+<button aria-label="Añadir a lista de deseos: MSI Stealth 16 AI Studio" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">MSI Creator</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.7</span>
+<span class="text-on-surface-variant text-[11px]">(14)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                MSI Stealth 16 AI Studio A1V (Ultra 9 + RTX 4070)
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Intel Core Ultra 9 185H (Hasta 5.1 GHz)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">sports_esports</span>
+<span>RTX 4070 8GB GDDR6 Drivers NVIDIA Studio</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">developer_board</span>
+<span>32 GB DDR5 (Expandible a 64GB)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>16" QHD+ 240Hz 100% DCI-P3 Calibrado de Fábrica</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$2,399.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$2,149.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-fixed px-2 py-0.5 rounded">En Stock (4 uds)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+<!-- Card 6: HP Omen Transcend 14 -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative">
+<div>
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="HP Omen Transcend 14 compact black metallic gaming laptop with bright edge-to-edge transparent pudding keycaps illuminated resting on dark carbon fiber mat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTHhlP-j0O4t4MA6IufmwrNPWgF3pgir7xUYVwY8r__xc_siRlGRo0iAehllIK2UtAyDTg0UgCbYj0qrZ8TDkwb4p00ZC2sW7gpUDWQcFGT2Kg88q_A4lpavhQP2QXosz3m4VCiMOeVtNPhA-XFbEf8beCAuayegO1_vRedTWspAcD9szvxGBpKSjpocdAAV2PvTo9vbypQ3dTwxil2xi20sduJoLtW82SwW1PaSk"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-[11px] font-semibold rounded">Ultraligero 1.6kg</span>
+</div>
+<button aria-label="Añadir a lista de deseos: HP Omen Transcend 14" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-wider font-semibold text-secondary">HP Gaming</span>
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.5</span>
+<span class="text-on-surface-variant text-[11px]">(21)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold leading-snug line-clamp-2 hover:text-primary transition-colors">
+                HP Omen Transcend 14 OLED (Intel Core Ultra 7)
+              </h3>
+<!-- Technical Specifications Bullet Matrix -->
+<ul class="pt-space-xs space-y-1 font-body-sm text-[13px] text-on-surface-variant">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">memory</span>
+<span class="truncate">Intel Core Ultra 7 155H (16 núcleos híbridos)</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">sports_esports</span>
+<span>GeForce RTX 4060 8GB GDDR6 DLSS 3.5</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">developer_board</span>
+<span>16 GB LPDDR5x 7467 MT/s integrados</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[15px]">screenshot_monitor</span>
+<span>14" 2.8K 120Hz IMAX Enhanced OLED</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 p-space-sm -mx-space-md -mb-space-md rounded-b-xl space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">$1,699.00</span>
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">$1,499.00</div>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-fixed px-2 py-0.5 rounded">En Stock (15 uds)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex-1 py-2 px-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Comprar</span>
+</button>
+<label class="flex items-center gap-1 px-2.5 py-2 bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span class="hidden sm:inline">Comparar</span>
+</label>
+</div>
+</div>
+</article>
+</div>
+<!-- Accessible Pagination Controller -->
+<nav aria-label="Navegación entre páginas de resultados" class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Página <strong class="text-on-surface">1</strong> de <strong class="text-on-surface">5</strong> (Total 118 productos)
+        </div>
+<ul class="flex items-center gap-1 font-label-md text-label-md">
+<li>
+<button aria-label="Ir a página anterior" class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant/50 cursor-not-allowed flex items-center justify-center" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+</li>
+<li>
+<a aria-current="page" class="w-10 h-10 rounded-lg bg-primary text-on-primary font-semibold flex items-center justify-center shadow-sm" href="#">1</a>
+</li>
+<li>
+<a class="w-10 h-10 rounded-lg hover:bg-surface-container text-on-surface font-medium flex items-center justify-center transition-colors" href="#">2</a>
+</li>
+<li>
+<a class="w-10 h-10 rounded-lg hover:bg-surface-container text-on-surface font-medium flex items-center justify-center transition-colors" href="#">3</a>
+</li>
+<li>
+<span class="w-8 h-10 text-on-surface-variant flex items-center justify-center">…</span>
+</li>
+<li>
+<a class="w-10 h-10 rounded-lg hover:bg-surface-container text-on-surface font-medium flex items-center justify-center transition-colors" href="#">5</a>
+</li>
+<li>
+<a aria-label="Ir a página siguiente" class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</a>
+</li>
+</ul>
+</nav>
+</section>
+</div>
+<!-- Interactive Quick Help & Technical Advisory Banner -->
+<section aria-labelledby="advisory-title" class="mt-space-xl bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-lowest/15 backdrop-blur-md px- space-sm py-1 rounded-full font-label-sm text-label-sm text-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Asistente de Decisión Inteligente</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight text-on-primary" id="advisory-title">
+          ¿No tienes certeza de qué especificación técnica requieres?
+        </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+          Evita cuellos de botella en compilación, rendering o streaming. Consulta nuestra matriz de compatibilidad por software (Docker, Premiere, Unreal Engine 5, AutoCAD) o inicia sesión con un especialista técnico en tiempo real.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<button class="px-space-md py-3 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Test de Compatibilidad (2 min)</span>
+</button>
+<button class="px-space-md py-3 bg-surface-container-lowest text-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chatear con Especialista</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for View Toggles and Favorite buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    const gridBtn = document.getElementById('grid-view-btn');
+    const listBtn = document.getElementById('list-view-btn');
+    const catalogGrid = document.getElementById('product-catalog-grid');
+
+    if (gridBtn && listBtn && catalogGrid) {
+      gridBtn.addEventListener('click', () => {
+        gridBtn.setAttribute('aria-pressed', 'true');
+        gridBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        gridBtn.classList.remove('text-on-surface-variant');
+
+        listBtn.setAttribute('aria-pressed', 'false');
+        listBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        listBtn.classList.add('text-on-surface-variant');
+
+        catalogGrid.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg';
+      });
+
+      listBtn.addEventListener('click', () => {
+        listBtn.setAttribute('aria-pressed', 'true');
+        listBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        listBtn.classList.remove('text-on-surface-variant');
+
+        gridBtn.setAttribute('aria-pressed', 'false');
+        gridBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        gridBtn.classList.add('text-on-surface-variant');
+
+        catalogGrid.className = 'grid grid-cols-1 gap-space-md';
+      });
+    }
+
+    // Interactive Toast trigger simulation for "Comprar" buttons
+    const buyButtons = document.querySelectorAll('button:has(.material-symbols-outlined:contains("shopping_cart")), button:contains("Comprar")');
+    buyButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span><span>¡Añadido!</span>`;
+        btn.classList.add('bg-secondary');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('bg-secondary');
+        }, 1800);
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg pb-space-xl"><div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.06)]"><span class="material-symbols-outlined text-primary text-[32px]">lock</span><div><p class="font-label-md text-label-md text-on-surface font-semibold">Pago Seguro SSL</p><p class="font-body-sm text-body-sm text-on-surface-variant">Cifrado militar 256-bit</p></div></div><div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.06)]"><span class="material-symbols-outlined text-primary text-[32px]">verified_user</span><div><p class="font-label-md text-label-md text-on-surface font-semibold">Garantía Oficial</p><p class="font-body-sm text-body-sm text-on-surface-variant">12 a 36 meses directa</p></div></div><div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.06)]"><span class="material-symbols-outlined text-secondary text-[32px]">published_with_changes</span><div><p class="font-label-md text-label-md text-on-surface font-semibold">Devolución 30 días</p><p class="font-body-sm text-body-sm text-on-surface-variant">Reintegro 100% garantizado</p></div></div><div class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_3px_rgba(15,23,42,0.06)]"><span class="material-symbols-outlined text-primary text-[32px]">accessibility_new</span><div><p class="font-label-md text-label-md text-on-surface font-semibold">WCAG 2.2 Nivel AA</p><p class="font-body-sm text-body-sm text-on-surface-variant">Plataforma 100% accesible</p></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl py-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="TECHSTORE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAsB_9CgvaWJ9WMBgCg3HFBlLGKAts0vH7V0MsicU1AcQ1B_mZBDwZ6WIap8UpVcBit4W7krI4wC8LKlQDD5rp3S2qM2-uMHjaANTGcf0UYGC3FOqXDQ5yb34vFLaP8110bf1ykF-l9QnLAbjvjs2mpE-aeVips0S1OXxOuzoV2fcnrfMkp77l8bZMWwREwVuXLDOW9JoPLM73YrQqsgNnqDfkJNFgj4ywnQHn9GgaP"/><span class="font-headline-sm text-headline-sm text-primary font-bold">TECHSTORE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Especialistas certificados en infraestructura informática, gaming de alto rendimiento, workstations y dispositivos móviles de última generación con soporte técnico profesional continuo.</p><div class="pt-space-sm"><label class="font-label-md text-label-md text-on-surface font-semibold block mb-space-xs" for="footer-newsletter">Suscríbete al Boletín Tecnológico Semanal</label><div class="flex max-w-md"><input class="flex-1 px-space-md py-2.5 bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant rounded-l-xl focus:ring-2 focus:ring-primary focus:outline-none" id="footer-newsletter" placeholder="tu-correo@empresa.com" required="" type="email"/><button class="px-space-lg py-2.5 bg-primary text-on-primary font-label-md text-label-md font-semibold rounded-r-xl hover:bg-primary-container hover:text-on-primary-container transition-colors focus:ring-2 focus:ring-primary focus:outline-none" type="submit">Suscribirme</button></div><p class="font-label-sm text-label-sm text-on-surface-variant mt-1.5">Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.</p></div></div><div><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-md">Categorías</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo-de-productos" href="#">Laptops y Notebooks</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="smartphones-y-tablets" href="#">Smartphones &amp; Tablets</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="componentes-y-hardware" href="#">Placas de Video y CPUs</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="perifericos-y-accesorios" href="#">Periféricos Profesionales</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="ofertas-especiales" href="#">Outlet y Promociones</a></li></ul></div><div><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-md">Ayuda y Soporte</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="centro-de-ayuda" href="#">Centro de Ayuda FAQ</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="estado-del-pedido" href="#">Seguimiento de Envíos</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="garantias" href="#">Gestión de Garantías RMA</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="declaracion-de-accesibilidad" href="#">Declaración de Accesibilidad</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#">Atención Corporativa</a></li></ul></div><div><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold mb-space-md">Políticas y Legal</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="terminos-del-servicio" href="#">Términos del Servicio</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="politica-de-privacidad" href="#">Política de Privacidad</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="politica-de-devolucion" href="#">Política de Reembolso</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="defensa-al-consumidor" href="#">Defensa del Consumidor</a></li><li class="py-1"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="seguridad-y-cookies" href="#">Configuración de Cookies</a></li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-lg gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 TECHSTORE Inc. Todos los derechos reservados. Desarrollado con estrictos estándares de inclusión y accesibilidad digital WCAG 2.2 AA.</p><div class="flex items-center gap-space-lg"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px] text-secondary">shield</span><span>Transacciones Cifradas SSL</span></span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px] text-primary">verified</span><span>Hardware Autorizado</span></span></div></div></div></footer></body></html>
